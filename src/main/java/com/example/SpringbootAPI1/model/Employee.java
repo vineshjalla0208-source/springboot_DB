@@ -3,6 +3,7 @@ package com.example.SpringbootAPI1.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 
 @Data // using @Data annotation(lombok) it will generate setter and getter, toString methods
 @Entity// et that collectively represents a group of entities of a similar type. For Example: An entity set of cars, an entity set of bank accounts, etc
@@ -19,4 +20,6 @@ public class Employee {
     private String lastname;
     @Column(name="e_mail")
     private String email;
+    @Column(name="dob")
+    private LocalDate dob;
 }
