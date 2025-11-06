@@ -47,3 +47,8 @@ where repository class will connect to model class.  curd operations are done by
 -------------------------------------------------------------------------------------------------------
 In order after returning value To print in web page. we should use toString() method complusary.
 otherwise use @Data annotation of lombok.
+what is java class?
+->A class in Java is a blueprint that defines the state (fields) and behavior (methods) of objects created from it.
+->It can include constructors for setting up new objects, fields to store data, and methods to operate on that data.
+->Classes support encapsulation, inheritance, and polymorphism, letting you organize and reuse code effectively.
+
