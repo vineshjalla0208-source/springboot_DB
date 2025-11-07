@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>60-Second Counter App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="count">0</h1>
+  <button type="button" onclick="changeCount(1)">+</button>
+  <button type="button" onclick="changeCount(-1)">-</button>
+
+  <script>
+    let count = 0;
+
+    function changeCount(delta) {
+      count += delta;
+      document.getElementById("count").textContent = count;
+    }
+  </script>
+</body>
+</html>
