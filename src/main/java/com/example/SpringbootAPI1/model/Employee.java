@@ -5,21 +5,24 @@ import lombok.Data;
 import javax.persistence.*;
 import java.time.LocalDate;
 
-@Data // using @Data annotation(lombok) it will generate setter and getter, toString methods
-@Entity// et that collectively represents a group of entities of a similar type. For Example: An entity set of cars, an entity set of bank accounts, etc
-@Table(name="employees") // if you not provide table name. spring automtically use class name Employee has table name.
+@Data
+@Entity
+@Table(name = "employees")
 public class Employee {
 
-    @Id // primary key//What is a primary key in the database?
-   // A primary key is the column or columns that contain values that uniquely identify each row in a table
-    @GeneratedValue(strategy = GenerationType.IDENTITY)// these annotation generates primary keys value automatically(see in controller save method example).
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column(name="first_name")//if you not provide column name. spring automatically use column name has firstname.
+
+    @Column(name = "first_name")
     private String firstname;
-    @Column(name="last_name")
+
+    @Column(name = "last_name")
     private String lastname;
-    @Column(name="e_mail")
+
+    @Column(name = "email")
     private String email;
-    @Column(name="dob")
+
+    @Column(name = "dob")
     private LocalDate dob;
 }
